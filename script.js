@@ -26,7 +26,7 @@ function numberOfSquares() {
     if (newSquares >= 1 && newSquares <= 100) {
         container.innerHTML = "";
         grids = newSquares;
-        createGrids(newSquares);
+        makeGrids(newSquares);
     }
     else {
         return numberOfSquares();
