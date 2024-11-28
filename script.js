@@ -5,5 +5,6 @@ function makeGrids(squares) {
     const squareSize = containerWidth/squares;
     for (let i =1; i <(squares * squares); i++) {
         const square = document.createElement("div");
+        square.classList.add("square");
     }
 }
