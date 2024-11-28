@@ -1,3 +1,5 @@
+const container = document.querySelector('.container');
+
 let grids = 16;
 
 function makeGrids(squares) {
