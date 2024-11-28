@@ -43,3 +43,7 @@ button {
 #reset {
     background-color: darkred;
 }
+
+#clear {
+    background-color: grey;
+}
