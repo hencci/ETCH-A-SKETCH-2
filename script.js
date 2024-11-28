@@ -15,3 +15,7 @@ function makeGrids(squares) {
 }
 
 makeGrids(grids);
+
+function numberOfSquares() {
+    let newSquares = prompt("Enter a number (from 1 - 100)")
+}
