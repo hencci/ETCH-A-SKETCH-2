@@ -4,6 +4,8 @@ const resetButton = document.querySelector('#reset');
 
 let grids = 16;
 
+changeGrid.addEventListener("click", numberOfSquares);
+
 function makeGrids(squares) {
     const containerWidth = container.clientWidth;
     const squareSize = containerWidth/squares;
