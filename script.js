@@ -1,5 +1,5 @@
 let grids = 16;
 
-function makeGrids() {
-
+function makeGrids(squares) {
+    const containerWidth = container.clientWidth;
 }
