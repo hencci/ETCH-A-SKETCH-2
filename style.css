@@ -4,6 +4,16 @@
     padding: 0;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: black;
+    border: 1px solid black;
+    width: 500px;
+    opacity: 0.9;
+}
+
 .square {
     border: 1px solid gray;
     cursor: pointer;
