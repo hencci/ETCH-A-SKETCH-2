@@ -27,3 +27,7 @@ function numberOfSquares() {
         return numberOfSquares();
     }
 }
+
+function draw(e) {
+    e.target.style.backgroundColor = "white";
+}
