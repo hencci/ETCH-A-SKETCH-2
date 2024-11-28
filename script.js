@@ -39,6 +39,11 @@ function draw(e) {
     e.target.style.backgroundColor = "white";
 }
 
+function clearContainer(){
+    container.innerHTML = "";
+    makeGrids(grids);
+}
+
 function resetGrids() {
     container.innerHTML = "";
     grids = 16;
