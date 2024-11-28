@@ -24,3 +24,22 @@ body{
     border: 1px solid gray;
     cursor: pointer;
 }
+
+.buttons {
+    margin: 20px 0;
+    display: flex;
+    gap: 40px;
+}
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#changeGrid {
+    background-color: darkgreen;
+}
+
+#reset {
+    background-color: darkred;
+}
