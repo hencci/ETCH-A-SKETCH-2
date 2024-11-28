@@ -23,4 +23,7 @@ function numberOfSquares() {
         grids = newSquares;
         createGrids(newSquares);
     }
+    else {
+        return numberOfSquares();
+    }
 }
