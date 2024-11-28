@@ -13,3 +13,5 @@ function makeGrids(squares) {
         container.appendChild(square);
     }
 }
+
+makeGrids(grids);
