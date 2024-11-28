@@ -36,3 +36,8 @@ function numberOfSquares() {
 function draw(e) {
     e.target.style.backgroundColor = "white";
 }
+
+function resetGrids() {
+    container.innerHTML = "";
+    makeGrids(grids);
+}
