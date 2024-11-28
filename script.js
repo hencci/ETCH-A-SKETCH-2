@@ -7,6 +7,7 @@ let grids = 16;
 
 changeGrid.addEventListener("click", numberOfSquares);
 resetButton.addEventListener("click", resetGrids);
+clear.addEventListener("click", clearContainer);
 
 function makeGrids(squares) {
     const containerWidth = container.clientWidth;
