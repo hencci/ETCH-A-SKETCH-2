@@ -2,7 +2,6 @@ const container = document.querySelector('.container');
 const changeGrid = document.querySelector('#changeGrid');
 const resetButton = document.querySelector('#reset');
 const clear = document.querySelector('#clear');
-const selectElement = document.querySelector('#numberSelect');
 
 let grids = 16;
 
@@ -26,15 +25,26 @@ function makeGrids(squares) {
 makeGrids(grids);
 
 function numberOfSquares() {
-    let newSquares = prompt("Enter a number (from 1 - 100)");
-    if (newSquares >= 1 && newSquares <= 100) {
-        container.innerHTML = "";
-        grids = newSquares;
-        makeGrids(newSquares);
-    }
-    else {
-        return numberOfSquares();
-    }
+    const selectElement = document.querySelector('#numberSelect');
+    selectElement.addEventListener("change", (e) => {
+        const newSquares = e.target.value;
+        if (newSquares >= 1 && newSquares <= 100) {
+            container.innerHTML = "";
+            grids = newSquares;
+            makeGrids(newSquares);
+        }
+        else if (newSquares === "other") {
+            let otherSquares = prompt("Enter a number (from 1 - 100)");
+            if (otherSquares >= 1 && otherSquares <= 100) {
+                container.innerHTML = "";
+                grids = otherSquares;
+                makeGrids(otherSquares);
+            }
+            else {
+                alert("Invalid input. Try again");
+            }
+        }
+    });
 }
 
 function draw(e) {
