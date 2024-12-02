@@ -2,6 +2,7 @@ const container = document.querySelector('.container');
 const changeGrid = document.querySelector('#changeGrid');
 const resetButton = document.querySelector('#reset');
 const clear = document.querySelector('#clear');
+const selectElement = document.querySelector('#numberSelect');
 
 let grids = 16;
 
