@@ -2,6 +2,7 @@ const container = document.querySelector('.container');
 const changeGrid = document.querySelector('#changeGrid');
 const resetButton = document.querySelector('#reset');
 const clear = document.querySelector('#clear');
+const selectElement = document.querySelector('#numberSelect');
 
 let grids = 16;
 
@@ -25,9 +26,8 @@ function makeGrids(squares) {
 makeGrids(grids);
 
 function numberOfSquares() {
-    const selectElement = document.querySelector('#numberSelect');
     selectElement.style.display = "inline-block"
-    
+
     selectElement.addEventListener("change", (e) => {
         const newSquares = e.target.value;
         if (newSquares >= 1 && newSquares <= 100) {
