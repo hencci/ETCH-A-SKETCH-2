@@ -26,6 +26,8 @@ makeGrids(grids);
 
 function numberOfSquares() {
     const selectElement = document.querySelector('#numberSelect');
+    selectElement.style.display = "inline-block"
+    
     selectElement.addEventListener("change", (e) => {
         const newSquares = e.target.value;
         if (newSquares >= 1 && newSquares <= 100) {
