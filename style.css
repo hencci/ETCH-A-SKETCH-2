@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: black;
+    border: 1px solid black;
+    width: 500px;
+    opacity: 0.9;
+}
+
+.square {
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+.buttons {
+    margin: 20px 0;
+    display: flex;
+    gap: 40px;
+}
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#changeGrid {
+    background-color: darkgreen;
+}
+
+#reset {
+    background-color: darkred;
+}
+
+#clear {
+    background-color: grey;
+}
+
+#numberSelect {
+    display: none;
+    background-color: lightgray;
+    padding: 0.5rem 0;
+    border-radius: 5px;
+}
