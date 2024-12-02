@@ -17,7 +17,7 @@ function makeGrids(squares) {
         square.classList.add("square");
         square.style.width = `${squareSize}px`;
         square.style.height = `${squareSize}px`;
-        square.addEventListener("mouseover", draw);
+        square.addEventListener("pointerdown", draw);
         container.appendChild(square);
     }
 }
