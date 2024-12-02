@@ -47,3 +47,7 @@ button {
 #clear {
     background-color: grey;
 }
+
+#numberSelect {
+    display: none;
+}
