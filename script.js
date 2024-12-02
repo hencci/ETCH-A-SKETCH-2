@@ -62,4 +62,5 @@ function resetGrids() {
     container.innerHTML = "";
     grids = 16;
     makeGrids(grids);
+    selectElement.style.display = "none"
 }
